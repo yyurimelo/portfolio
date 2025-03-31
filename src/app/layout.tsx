@@ -3,6 +3,10 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import App from "./page";
 
+export const metadata: Metadata = {
+  title: "Portfólio - YM",
+  description: "",
+};
 
 export default function RootLayout({
   children,
@@ -18,7 +22,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <App />
+          {children}
         </ThemeProvider>
       </body>
     </html>
