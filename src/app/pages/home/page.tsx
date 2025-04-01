@@ -19,16 +19,15 @@ export function Home() {
   return (
     <>
       <PublicHeader />
-      <div className="mt-2 lg:mt-4 lg:flex lg:items-center lg:justify-center lg:space-x-10">
+      <div className="flex flex-col items-center justify-center space-x-20 mt-24 md:flex-row">
         <motion.section
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          {/* <OrbitingCirclesDemo /> */}
           <IconCloudDemo />
         </motion.section>
-        <section>
+        <section className="mb-24 lg:mb-0">
           <BoxRevealDemo />
         </section>
       </div>

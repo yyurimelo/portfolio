@@ -1,13 +1,19 @@
 import { Home } from "./pages/home/page";
 import { Me } from "./pages/me/page";
+import { Projects } from "./pages/projects/page";
 
 export default function App() {
   return (
-    <>
-      <div className="min-h-screen px-4">
+    <div>
+      <div className="min-h-screen">
         <Home />
       </div>
-      <Me />
-    </>
+      <div>
+        <Me />
+      </div>
+      <div className="min-h-screen">
+        <Projects />
+      </div>
+    </div>
   );
 }
