@@ -1,6 +1,6 @@
 import { GlobeDemo } from "@/app/(components)/globe";
 
-export function Me() {
+export default function Me() {
   const nowYear = new Date().getFullYear();
   const birthYear = 2006;
   const age = nowYear - birthYear;
