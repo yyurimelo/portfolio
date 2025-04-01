@@ -42,7 +42,6 @@ export function IconCloudDemo() {
   return (
     <NeonGradientCard>
       <IconCloud images={images} />
-      {/* <BorderBeam duration={3} size={200} /> */}
     </NeonGradientCard>
   );
 }
