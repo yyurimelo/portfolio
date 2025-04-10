@@ -141,7 +141,7 @@ const DATA = {
 
 export default function PublicHeader() {
   return (
-    <div className="flex flex-col items-center fixed top-0 w-full">
+    <div className="flex flex-col items-center fixed w-full">
       <ThemeImage />
       <TooltipProvider>
         <Dock direction="middle">
