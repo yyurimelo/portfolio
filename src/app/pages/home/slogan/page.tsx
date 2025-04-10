@@ -2,7 +2,6 @@ import { Button } from "@space/components/ui/button";
 import { BoxReveal } from "@space/components/magicui/box-reveal";
 import Icon from "../icon/page";
 import Image from "next/image";
-import { motion } from "motion/react";
 
 const slugs = [
   "typescript",
@@ -74,14 +73,9 @@ export default function Slogan() {
           <Button className="mt-[1.6rem] bg-[#ab0fff]">Contato</Button>
         </BoxReveal>
       </div>
-      <motion.div
-        initial={{ x: 100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="md:w-1/3 w-full p-4"
-      >
+      <div>
         <Icon />
-      </motion.div>
+      </div>
     </div>
   );
 }
