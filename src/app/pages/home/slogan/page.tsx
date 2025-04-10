@@ -1,6 +1,7 @@
 import { Button } from "@space/components/ui/button";
 import { BoxReveal } from "@space/components/magicui/box-reveal";
 import Icon from "../icon/page";
+import Image from "next/image";
 
 const slugs = [
   "typescript",
@@ -18,10 +19,9 @@ const slugs = [
   "dotnet",
 ];
 
-// Certifique-se de que as URLs estão corretas ou use um serviço como "simple-icons"
 const images = slugs.map(
   (slug) =>
-    `https://cdn.simpleicons.org/${slug.toLowerCase()}/${slug.toLowerCase()}`
+    `https://cdn.simpleicons.org/${slug.toLowerCase()}/${slug.toLowerCase()}/white`
 );
 
 export default function Slogan() {
@@ -56,10 +56,12 @@ export default function Slogan() {
             <div className="flex flex-wrap gap-2 text-[0.9rem] mt-2">
               {slugs.map((slug, index) => (
                 <div key={slug} className="flex items-center space-x-1">
-                  <img
+                  <Image
                     src={images[index]}
-                    alt={slug}
-                    className="h-4 w-4 rounded-full"
+                    alt={`Ícone de ${slug}`}
+                    width={20}
+                    height={20}
+                    unoptimized
                   />
                 </div>
               ))}
