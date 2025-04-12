@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@space/components/ui/theme-provider";
 import { ScrollProgress } from "@space/components/magicui/scroll-progress";
-import { PublicHeader } from "./_components/header/layout";
+import { Navbar } from "./_components/navbar/layout";
 import { poppinsRegular } from "./_components/poppins/weight-poppins";
 
 export const metadata: Metadata = {
@@ -25,8 +25,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <PublicHeader />
           {children}
+          <Navbar />
         </ThemeProvider>
       </body>
     </html>

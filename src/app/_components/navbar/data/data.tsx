@@ -1,20 +1,3 @@
-import Link from "next/link";
-import React from "react";
-import ThemeImage from "../theme-image/page";
-
-// components
-import { Dock, DockIcon } from "@space/components/magicui/dock";
-import { ModeToggle } from "@space/components/ui/theme-toggle";
-import { buttonVariants } from "@space/components/ui/button";
-import { Separator } from "@space/components/ui/separator";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@space/components/ui/tooltip";
-import { cn } from "@space/lib/utils";
-
 // icons
 import { CalendarIcon, HomeIcon, Instagram, MailIcon } from "lucide-react";
 
@@ -65,7 +48,7 @@ const Icons = {
   Instagram: (props: IconProps) => <Instagram {...props} />,
 };
 
-const DATA = {
+export const DATA = {
   navbar: [{ href: "#", icon: HomeIcon, label: "Home" }],
   contact: {
     social: {
@@ -87,69 +70,3 @@ const DATA = {
     },
   },
 };
-
-export function PublicHeader() {
-  return (
-    <div className="flex flex-col items-center fixed w-full">
-      <ThemeImage />
-      <TooltipProvider>
-        <Dock direction="middle">
-          {DATA.navbar.map((item) => (
-            <DockIcon key={item.label}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    href={item.href}
-                    aria-label={item.label}
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full"
-                    )}
-                  >
-                    <item.icon className="size-4" />
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{item.label}</p>
-                </TooltipContent>
-              </Tooltip>
-            </DockIcon>
-          ))}
-          <Separator orientation="vertical" className="h-full" />
-          {Object.entries(DATA.contact.social).map(([name, social]) => (
-            <DockIcon key={name}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    href={social.url}
-                    aria-label={social.name}
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full"
-                    )}
-                  >
-                    <social.icon className="size-4" />
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{name}</p>
-                </TooltipContent>
-              </Tooltip>
-            </DockIcon>
-          ))}
-          <Separator orientation="vertical" className="h-full" />
-          <DockIcon>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <ModeToggle />
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Theme</p>
-              </TooltipContent>
-            </Tooltip>
-          </DockIcon>
-        </Dock>
-      </TooltipProvider>
-    </div>
-  );
-}
