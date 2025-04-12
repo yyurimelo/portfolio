@@ -1,20 +1,8 @@
 import Image from "next/image";
 import { ShineBorder } from "@space/components/magicui/shine-border";
 
-export function CardsFullstack() {
+export function CardsBackEnd() {
   const slugs = [
-    "html5",
-    "css3",
-    "javascript",
-    "react",
-    "typescript",
-    "nextdotjs",
-    "vite",
-    "tailwindcss",
-    "shadcnui",
-    "reactquery",
-    "zod",
-    "figma",
     "dotnet",
     "nodedotjs",
     "nestjs",
