@@ -1,7 +1,7 @@
-import { Button } from "@space/components/ui/button";
 import { BoxReveal } from "@space/components/magicui/box-reveal";
 import Icon from "../icon/page";
 import Image from "next/image";
+import { InteractiveHoverButton } from "@space/components/magicui/interactive-hover-button";
 
 const slugs = [
   "typescript",
@@ -71,7 +71,9 @@ export default function Slogan() {
         </BoxReveal>
 
         <BoxReveal boxColor={"#ab0fff"} duration={0.5}>
-          <Button className="mt-[1.6rem] bg-[#ab0fff]">Contato</Button>
+          <InteractiveHoverButton className="mt-[1.6rem] bg-[#ab0fff]">
+            Contato
+          </InteractiveHoverButton>
         </BoxReveal>
       </div>
       <div>
