@@ -1,11 +1,13 @@
 // icons
 import { CalendarIcon, HomeIcon, Instagram, MailIcon } from "lucide-react";
+import { StackIcon } from "@radix-ui/react-icons";
 
-export type IconProps = React.HTMLAttributes<SVGElement>;
+export type IconProps = Omit<React.HTMLAttributes<SVGElement>, "children">;
 
 const Icons = {
   calendar: (props: IconProps) => <CalendarIcon {...props} />,
-  Email: (props: IconProps) => <MailIcon {...props} />,
+  email: (props: IconProps) => <MailIcon {...props} />,
+  stack: (props: IconProps) => <StackIcon {...props} />,
   linkedin: (props: IconProps) => (
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
       <title>LinkedIn</title>
@@ -49,7 +51,10 @@ const Icons = {
 };
 
 export const DATA = {
-  navbar: [{ href: "#", icon: HomeIcon, label: "Home" }],
+  navbar: [
+    { href: "#home", icon: HomeIcon, label: "Home" },
+    { href: "#skills", icon: Icons.stack, label: "Skills" },
+  ],
   contact: {
     social: {
       GitHub: {
