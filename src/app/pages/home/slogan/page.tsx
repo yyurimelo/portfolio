@@ -43,7 +43,7 @@ export default function Slogan() {
           <div className="md:flex flex md:items-center text-left text-xs md:text-[1rem]">
             <h2>
               {"<"}Desenvolvedor Fullstack{" "}
-              <span className="text-[#ab0fff]"> | UI DESIGNER {"/>"}</span>
+              <span className="text-[#ab0fff]"> | UX DESIGNER {"/>"}</span>
             </h2>
           </div>
         </BoxReveal>
