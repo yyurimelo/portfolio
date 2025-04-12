@@ -1,7 +1,15 @@
 import { WordRotate } from "@space/components/magicui/word-rotate";
 import Image from "next/image";
 
-const slugs = ["typescript", "javascript", "react", "tailwindcss", "dotnet"];
+const slugs = [
+  "typescript",
+  "javascript",
+  "react",
+  "nextdotjs",
+  "vite",
+  "tailwindcss",
+  "dotnet",
+];
 
 const images = slugs.map(
   (slug) =>
@@ -12,7 +20,6 @@ export default function LanguagesRotate() {
   return (
     <div>
       <WordRotate
-        className="font-bold text-black dark:text-white"
         words={slugs.map((slug, index) => (
           <div key={slug} className="flex items-center space-x-1">
             <Image

@@ -139,7 +139,7 @@ const DATA = {
   },
 };
 
-export default function PublicHeader() {
+export function PublicHeader() {
   return (
     <div className="flex flex-col items-center fixed w-full">
       <ThemeImage />

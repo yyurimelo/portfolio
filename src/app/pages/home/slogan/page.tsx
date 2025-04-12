@@ -7,6 +7,8 @@ const slugs = [
   "typescript",
   "javascript",
   "react",
+  "nextdotjs",
+  "vite",
   "androidstudio",
   "html5",
   "css3",
@@ -14,7 +16,6 @@ const slugs = [
   "github",
   "figma",
   "tailwindcss",
-  "nextdotjs",
   "mysql",
   "dotnet",
 ];
