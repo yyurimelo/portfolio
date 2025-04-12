@@ -157,3 +157,27 @@
 html {
   scroll-behavior: smooth;
 }
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #8833ff; /* sua cor customizada */
+}
+
+.swiper-button-prev {
+  left: -30px;
+}
+
+.swiper-button-next {
+  right: -30px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
