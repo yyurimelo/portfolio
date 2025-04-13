@@ -30,7 +30,7 @@ export default function Writing() {
         oferecendo uma plataforma completa para a gestão de produtos e vendas.
         <br />
         <br />
-        Hoje, tenho experiência sólida como desenvolvedor fullstack, trabalhando
+        Hoje, tenho experiência sólida como desenvolvedor full stack, trabalhando
         com tecnologias modernas como React, TypeScript, Tailwind, ShadCN UI e
         C#. Continuo estudando e me aperfeiçoando, sempre buscando criar
         soluções inovadoras e eficientes. A programação não é só minha

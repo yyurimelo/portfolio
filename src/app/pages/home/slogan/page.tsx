@@ -42,7 +42,7 @@ export default function Slogan() {
         <BoxReveal boxColor={"#ab0fff"} duration={0.5}>
           <div className="md:flex flex md:items-center text-left text-xs md:text-[1rem]">
             <h2>
-              {"<"}Desenvolvedor Fullstack{" "}
+              {"<"}Desenvolvedor Full stack{" "}
               <span className="text-[#ab0fff]"> | UX DESIGNER {"/>"}</span>
             </h2>
           </div>
@@ -52,7 +52,7 @@ export default function Slogan() {
           <div className="mt-2 text-xs md:text-[1rem]">
             <p className="text-left">
               Olá, me chamo Yuri Melo, tenho {age} anos e atualmente trabalho
-              como Fullstack. <br />
+              como Full stack. <br />
             </p>
             <div className="flex flex-wrap gap-2 text-[0.9rem] mt-2">
               {slugs.map((slug, index) => (
