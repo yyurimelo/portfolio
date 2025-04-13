@@ -1,6 +1,9 @@
+"use client";
+
 import { AuroraText } from "@space/components/magicui/aurora-text";
 import { CardsFullstack } from "./cards-fullstack";
 import { useIsMobile } from "@space/components/hooks/use-mobile";
+
 import { motion } from "motion/react";
 
 export default function FullStackSkills() {
