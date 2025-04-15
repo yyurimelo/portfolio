@@ -3,4 +3,4 @@ Neste projeto, você encontrará a estrutura completa do meu portfólio desenvol
 
 Para a estilização, optei pelo uso do Tailwind CSS, garantindo um design moderno, responsivo e com alta performance.
 
-🔗 Acesse o portfólio aqui: [[](https://ymportfolio.vercel.app/)]
+🔗 Acesse o portfólio aqui: [[ymportfolio.vercel.app](https://ymportfolio.vercel.app/)]
